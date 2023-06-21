@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
 import { Link } from "react-router-dom";
+
 import apiUrl from "../../api.js";
 
 import useStore from "../store/store";
@@ -284,11 +285,14 @@ export default function Index() {
               alt=""
             />
           </div>
+
+
           <Link to="/auth-form" className="bg-black w-[50vw] h-[5vh] rounded-[8px] sm:w-[40%] sm:h-[8vh] flex justify-center">
             <button className="bg-black w-[50vw] h-[5vh] rounded-[8px] sm:w-[40%] sm:h-[8vh]">
               <p>SIGN IN</p>
             </button>
           </Link>
+
           <p className="text-black flex font-montserrat font-semibold justify-evenly w-[100px] sm:w-[30%] ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -318,6 +322,7 @@ export default function Index() {
               className="object-contain p-10 "
               src="https://i.postimg.cc/9Fx97Mp7/qrcode-generado.png"
               alt="qr"
+
             />
           </div>
         </div>
